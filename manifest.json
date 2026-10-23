@@ -1,0 +1,17 @@
+{
+  "name": "Dr. Iuri Cardoso | Farmacêutico Esteta",
+  "short_name": "Dr. Iuri Cardoso",
+  "description": "Linkpage Oficial e Atendimento - Dr. Iuri Cardoso, Farmacêutico Esteta. Salvador - BA.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#06131f",
+  "theme_color": "#083959",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
