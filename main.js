@@ -227,29 +227,46 @@ document.addEventListener('DOMContentLoaded', () => {
   const copyUrlBtn = document.getElementById('btn-copy-url');
   const copyUrlText = document.getElementById('btn-copy-text');
 
-  function openQrModal() {
+  function openQrModal(e) {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
     if (!qrModal) return;
 
-    // Gera o QR Code com a URL atual
-    const currentUrl = encodeURIComponent(window.location.href);
-    if (qrImage && !qrImage.src) {
-      qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=240x240&format=svg&margin=1&data=${currentUrl}`;
+    if (qrImage) {
+      // Garante que o QR Code local pré-gerado seja exibido instantaneamente
+      if (!qrImage.getAttribute('src') || qrImage.getAttribute('src') === '') {
+        qrImage.src = 'img/qrcode.png';
+      }
     }
 
     qrModal.removeAttribute('hidden');
-    document.body.style.overflow = 'hidden';
+    qrModal.classList.add('modal--open');
+    qrModal.style.display = 'flex';
     trackEvent('qr_modal_opened');
   }
 
-  function closeQrModal() {
+  function closeQrModal(e) {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
     if (!qrModal) return;
+    qrModal.classList.remove('modal--open');
     qrModal.setAttribute('hidden', '');
-    document.body.style.overflow = '';
+    qrModal.style.display = 'none';
   }
 
-  if (showQrBtn) showQrBtn.addEventListener('click', openQrModal);
-  if (closeQrBtn) closeQrBtn.addEventListener('click', closeQrModal);
-  if (qrOverlay) qrOverlay.addEventListener('click', closeQrModal);
+  if (showQrBtn) {
+    showQrBtn.addEventListener('click', openQrModal);
+  }
+  if (closeQrBtn) {
+    closeQrBtn.addEventListener('click', closeQrModal);
+  }
+  if (qrOverlay) {
+    qrOverlay.addEventListener('click', closeQrModal);
+  }
 
   // Fechar com a tecla Escape
   document.addEventListener('keydown', (e) => {
