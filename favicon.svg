@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#faeed1" />
-      <stop offset="50%" stop-color="#d4af37" />
-      <stop offset="100%" stop-color="#9e7529" />
+    <linearGradient id="creamRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f4ede2" />
+      <stop offset="100%" stop-color="#dfd3c3" />
     </linearGradient>
   </defs>
-  <!-- Base Circular Branca com Borda Dourada para Alto Contraste em Qualquer Tema -->
-  <circle cx="64" cy="64" r="62" fill="#ffffff" stroke="url(#goldRim)" stroke-width="2.5" />
+  <!-- Base Circular Branca com Borda Creme / Bege Refinada -->
+  <circle cx="64" cy="64" r="62" fill="#ffffff" stroke="url(#creamRim)" stroke-width="2.5" />
   
   <!-- Monograma Oficial em Azul Safira (#083959) da Logo Azul do Dr. Iuri -->
   <g transform="translate(18, 18) scale(0.3622)" fill="#083959">

@@ -7,10 +7,10 @@ Projeto autoral, autêntico e de alto padrão desenvolvido para o **Dr. Iuri Car
 ## 💎 Identidade & Arquitetura Visual
 
 - **Paleta de Cores**:
-  - *Midnight & Sapphire Navy*: `#05101a`, `#081d2f`, `#083959`
-  - *Champagne Gold*: `#f7e7c4`, `#e4ca8b`, `#d4af37`
-  - *Emerald Green (WhatsApp Presence)*: `#25d366`, `#128c7e`
-  - *Soft Cyan*: `#38bdf8`
+  - *Obsidiana & Safira Fumê*: `#050c13`, `#091724`, `#0d2235`
+  - *Branco Puro & Marfim*: `#ffffff`, `#f4f0e8`
+  - *Creme & Bege Areia (Quiet Luxury)*: `#f4ede2`, `#dfd3c3`, `#b5a794`
+  - *Esmeralda Fumê (WhatsApp Presence)*: `#091a17`, `#38a169`
 - **Textura de Fundo**:
   - `img/textura-web.webp` e `img/textura-web.jpg` (otimizadas a partir da imagem original de 19MB para menos de 650KB, garantindo carregamento ultrarrápido em dispositivos móveis e preservando o original).
 - **Tipografia**:
@@ -23,7 +23,7 @@ Projeto autoral, autêntico e de alto padrão desenvolvido para o **Dr. Iuri Car
 
 1. **Pre-loader Animado em SVG Autoral**:
    - Monograma oficial estilizado em vetor SVG (`img/logo-symbol.svg`).
-   - Efeito de traçado dinâmico via `stroke-dasharray` e `stroke-dashoffset` com transição suave para preenchimento dourado e fade out fluido.
+   - Efeito de traçado dinâmico via `stroke-dasharray` e `stroke-dashoffset` com preenchimento marfim e fade out fluido.
 2. **Google Tag Manager (GTM) Pré-Configurado**:
    - Espaços identificados no `<head>` e logo após o `<body>` em `index.html`.
    - Disparo automático de eventos no `window.dataLayer`:
@@ -51,7 +51,7 @@ iuri/
 ├── index.html              # Estrutura semântica HTML5 com meta tags, GTM e acessibilidade
 ├── style.css               # Folha de estilos com design tokens, glassmorphism e animações
 ├── main.js                 # Lógica do preloader, dataLayer GTM, vCard, QR Code e Share API
-├── favicon.svg             # Favicon vetorial com o monograma e acabamento dourado
+├── favicon.svg             # Favicon vetorial com o monograma e acabamento creme/marfim
 ├── manifest.json           # Manifesto PWA para salvar o site como app na tela inicial
 ├── README.md               # Documentação técnica completa
 └── img/
